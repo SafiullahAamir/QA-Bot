@@ -14,7 +14,6 @@ load_dotenv()
 warnings.filterwarnings('ignore')
 
 # Set up Gemini API key (use environment variable or replace with your key)
-# os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY", "AIzaSyBQX3_Z3HEe_Yy69ejpWQHXOSpx1s63hGY")
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 if not GOOGLE_API_KEY:
     raise ValueError("GOOGLE_API_KEY environment variable is not set.")
